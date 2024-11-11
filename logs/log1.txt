@@ -1,0 +1,36 @@
+Ld /Users/childhoodandy/Library/Developer/Xcode/DerivedData/PodBinaryBuilderTest-fbnkekmdimbftlagxaflrkadkcqv/Build/Products/Debug-iphoneos/PodBinaryBuilderTest.app/PodBinaryBuilderTest.debug.dylib normal (in target 'PodBinaryBuilderTest' from project 'PodBinaryBuilderTest')
+    cd /Users/childhoodandy/Downloads/tmp/PodBinaryBuilderTest
+    /Applications/Xcode-16.2.0-Beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang 
+    -Xlinker 
+    -reproducible 
+    -target arm64-apple-ios11.0 
+    -dynamiclib 
+    -isysroot /Applications/Xcode-16.2.0-Beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.2.sdk -O0 -L/Users/childhoodandy/Library/Developer/Xcode/DerivedData/PodBinaryBuilderTest-fbnkekmdimbftlagxaflrkadkcqv/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphoneos -L/Users/childhoodandy/Library/Developer/Xcode/DerivedData/PodBinaryBuilderTest-fbnkekmdimbftlagxaflrkadkcqv/Build/Products/Debug-iphoneos -L/Users/childhoodandy/Library/Developer/Xcode/DerivedData/PodBinaryBuilderTest-fbnkekmdimbftlagxaflrkadkcqv/Build/Products/Debug-iphoneos/AFNetworking -L/Users/childhoodandy/Library/Developer/Xcode/DerivedData/PodBinaryBuilderTest-fbnkekmdimbftlagxaflrkadkcqv/Build/Products/Debug-iphoneos/MixTest -L/Users/childhoodandy/Library/Developer/Xcode/DerivedData/PodBinaryBuilderTest-fbnkekmdimbftlagxaflrkadkcqv/Build/Products/Debug-iphoneos/SwiftyJSON -L/Users/childhoodandy/Library/Developer/Xcode/DerivedData/PodBinaryBuilderTest-fbnkekmdimbftlagxaflrkadkcqv/Build/Products/Debug-iphoneos/libwebp -L/Users/childhoodandy/Library/Developer/Xcode/DerivedData/PodBinaryBuilderTest-fbnkekmdimbftlagxaflrkadkcqv/Build/Products/Debug-iphoneos/lottie-ios -F/Users/childhoodandy/Library/Developer/Xcode/DerivedData/PodBinaryBuilderTest-fbnkekmdimbftlagxaflrkadkcqv/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphoneos 
+    -F/Users/childhoodandy/Library/Developer/Xcode/DerivedData/PodBinaryBuilderTest-fbnkekmdimbftlagxaflrkadkcqv/Build/Products/Debug-iphoneos -F/Users/childhoodandy/Downloads/tmp/PodBinaryBuilderTest/Pods/../Binary/ZZKit-Swift -filelist /Users/childhoodandy/Library/Developer/Xcode/DerivedData/PodBinaryBuilderTest-fbnkekmdimbftlagxaflrkadkcqv/Build/Intermediates.noindex/PodBinaryBuilderTest.build/Debug-iphoneos/PodBinaryBuilderTest.build/Objects-normal/arm64/PodBinaryBuilderTest.LinkFileList -install_name @rpath/PodBinaryBuilderTest.debug.dylib -Xlinker -rpath 
+    -Xlinker /usr/lib/swift 
+    -Xlinker -rpath 
+    -Xlinker @executable_path/Frameworks 
+    -dead_strip 
+    -Xlinker -object_path_lto 
+    -Xlinker /Users/childhoodandy/Library/Developer/Xcode/DerivedData/PodBinaryBuilderTest-fbnkekmdimbftlagxaflrkadkcqv/Build/Intermediates.noindex/PodBinaryBuilderTest.build/Debug-iphoneos/PodBinaryBuilderTest.build/Objects-normal/arm64/PodBinaryBuilderTest_lto.o 
+    -Xlinker -export_dynamic 
+    -Xlinker -no_deduplicate 
+    -fobjc-arc 
+    -fobjc-link-runtime 
+    -L/Applications/Xcode-16.2.0-Beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos 
+    -L/usr/lib/swift 
+    -Xlinker -add_ast_path 
+    -Xlinker /Users/childhoodandy/Library/Developer/Xcode/DerivedData/PodBinaryBuilderTest-fbnkekmdimbftlagxaflrkadkcqv/Build/Intermediates.noindex/PodBinaryBuilderTest.build/Debug-iphoneos/PodBinaryBuilderTest.build/Objects-normal/arm64/PodBinaryBuilderTest.swiftmodule 
+    -ObjC -lAFNetworking 
+    -lMixTest 
+    -lSwiftyJSON 
+    -llibwebp 
+    -llottie-ios 
+    -framework UIKit
+    -framework ZZKit-Swift 
+    -Xlinker -alias 
+    -Xlinker _main 
+    -Xlinker ___debug_main_executable_dylib_entry_point -lPods-PodBinaryBuilderTest 
+    -Xlinker -no_adhoc_codesign 
+    -Xlinker -dependency_info 
+    -Xlinker /Users/childhoodandy/Library/Developer/Xcode/DerivedData/PodBinaryBuilderTest-fbnkekmdimbftlagxaflrkadkcqv/Build/Intermediates.noindex/PodBinaryBuilderTest.build/Debug-iphoneos/PodBinaryBuilderTest.build/Objects-normal/arm64/PodBinaryBuilderTest_dependency_info.dat -o /Users/childhoodandy/Library/Developer/Xcode/DerivedData/PodBinaryBuilderTest-fbnkekmdimbftlagxaflrkadkcqv/Build/Products/Debug-iphoneos/PodBinaryBuilderTest.app/PodBinaryBuilderTest.debug.dylib
