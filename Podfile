@@ -22,10 +22,11 @@ target 'PodBinaryBuilderTest' do
 
   pod 'libwebp', '1.1.0'
 
-  pod 'ZZKit-Swift', :git => 'http://gitlab.zhuanspirit.com/zz-ios-open/ios_module_zzkit_swift.git', :tag => '0.4.6'
+#  pod 'ZZKit-Swift', :git => 'http://gitlab.zhuanspirit.com/zz-ios-open/ios_module_zzkit_swift.git', :tag => '0.4.6'
+  pod 'ZZKit-Swift', :path => 'Binary/ZZKit-Swift'
 
-#  pod 'SwiftyJSON', :git => 'http://gitlab.zhuanspirit.com/zz-ios-open/ios_module_swifty_json.git', :tag => '5.0.1'
-  pod 'SwiftyJSON', :path => 'Binary/SwiftyJSON'
+  pod 'SwiftyJSON', :git => 'http://gitlab.zhuanspirit.com/zz-ios-open/ios_module_swifty_json.git', :tag => '5.0.1'
+#  pod 'SwiftyJSON', :path => 'Binary/SwiftyJSON'
 
   pod 'MixTest', :path => './MixTest'
 

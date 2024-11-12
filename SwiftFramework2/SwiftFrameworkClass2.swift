@@ -6,7 +6,12 @@
 //
 
 open class SwiftFrameworkClass2 {
-    func test() {
+    
+    public init() {
+    }
+
+    
+    public func test() {
         print("hello world")
     }
 }

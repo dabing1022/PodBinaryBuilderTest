@@ -7,14 +7,26 @@
 
 import SwiftyJSON
 import SwiftFramework2
+//import ZZKit_Swift
 
-class SwiftForCompile {
+public class SwiftForCompile: NSObject {
     
-    func test() {
+    @objc public func sayHello() {
         print("hello world")
         
         let framework2 = SwiftFrameworkClass2()
         framework2.test()
+    }
+    
+    @objc public func testSwiftyJson() {
+        let jsonDic = ["key": "value"]
+        let json = JSON(jsonDic)
+        print(json)
+    }
+    
+    @objc public func callMainProj() {
+//        let vc = ViewController()
+//        print(vc)
     }
     
 }
