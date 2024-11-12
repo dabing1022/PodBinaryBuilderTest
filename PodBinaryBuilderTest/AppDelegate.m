@@ -9,6 +9,8 @@
 #import "PodBinaryBuilderTest-Swift.h"
 
 @import SwiftyJSON;
+@import AFNetworking;
+@import ZZKit_Swift;
 
 @interface AppDelegate ()
 

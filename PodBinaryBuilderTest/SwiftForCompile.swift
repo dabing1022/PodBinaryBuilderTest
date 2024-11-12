@@ -7,7 +7,8 @@
 
 import SwiftyJSON
 import SwiftFramework2
-//import ZZKit_Swift
+import ZZKit_Swift
+import AFNetworking
 
 public class SwiftForCompile: NSObject {
     
@@ -24,9 +25,24 @@ public class SwiftForCompile: NSObject {
         print(json)
     }
     
+    @objc public func testZZKit() {
+        let a: String = "Hello world"
+        let b: NSString = a.oc_string
+        print(b)
+    }
+    
     @objc public func callMainProj() {
 //        let vc = ViewController()
 //        print(vc)
+    }
+    
+    @objc public func testAFNetworking() {
+        let manager = AFHTTPSessionManager()
+        manager.get("http://www.baidu.com", parameters: nil, headers: nil, progress: nil, success: { (task, responseObject) in
+            print(responseObject ?? "")
+        }) { (task, error) in
+            print(error)
+        }
     }
     
 }

@@ -18,7 +18,8 @@ target 'PodBinaryBuilderTest' do
   # Comment the next line if you don't want to use dynamic frameworks
   #
   pod 'lottie-ios', '2.1.8-stable.2+zhuanzhuan'
-  pod 'AFNetworking', '4.0.1-fix+zhuanzhuan.4', :modular_headers => true
+#  pod 'AFNetworking', '4.0.1-fix+zhuanzhuan.4', :modular_headers => true
+  pod 'AFNetworking', :path => 'Binary/AFNetworking'
 
   pod 'libwebp', '1.1.0'
 
