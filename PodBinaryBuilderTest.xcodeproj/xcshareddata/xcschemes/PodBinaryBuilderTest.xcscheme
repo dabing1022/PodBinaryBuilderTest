@@ -6,6 +6,15 @@
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES"
       buildArchitectures = "Automatic">
+      <PostActions>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "Run Script"
+               scriptText = "echo &quot;BUILT_PRODUCTS_DIR: ${BUILT_PRODUCTS_DIR}&quot;&#10;export XCODE_BUILT_PRODUCTS_DIR=$BUILT_PRODUCTS_DIR&#10;ruby FrameworkCollector.rb &#10;">
+            </ActionContent>
+         </ExecutionAction>
+      </PostActions>
       <BuildActionEntries>
          <BuildActionEntry
             buildForTesting = "YES"

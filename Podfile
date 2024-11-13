@@ -1,5 +1,7 @@
+$binary_source = 'http://gitlab.zhuanspirit.com/zz-ios-open/ZZBinarySpecs.git'
 $open_source = 'http://gitlab.zhuanspirit.com/zz-ios-open/ZZOpenSpecs.git'
 $default_source = 'http://gitlab.zhuanspirit.com/zz-ios/ZZSpecs.git'
+source $binary_source
 source $open_source
 source $default_source
 
@@ -13,6 +15,10 @@ install! 'cocoapods', :deterministic_uuids => false,
                       :incremental_installation => false,
                       :warn_for_unused_master_specs_repo => true,
                       :preserve_pod_file_structure => true
+
+plugin 'cocoapods-imy-bin'
+set_configuration_env('release_iphoneos')
+binary_pods = []
 
 target 'PodBinaryBuilderTest' do
   # Comment the next line if you don't want to use dynamic frameworks

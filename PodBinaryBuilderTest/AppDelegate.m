@@ -18,11 +18,11 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     SwiftForCompile *swifter = [[SwiftForCompile alloc] init];
     [swifter testSwiftyJson];
+    [swifter testZZKit];
     
     return YES;
 }
