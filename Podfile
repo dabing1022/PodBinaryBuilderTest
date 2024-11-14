@@ -18,19 +18,25 @@ install! 'cocoapods', :deterministic_uuids => false,
 
 plugin 'cocoapods-imy-bin'
 set_configuration_env('release_iphoneos')
-binary_pods = []
+set_binary_build_for_distribution(true)
+binary_pods = [
+#  "libwebp"
+]
+use_binaries_with_spec_selector! do |spec|
+  binary_pods.include? spec.name
+end
 
 target 'PodBinaryBuilderTest' do
   # Comment the next line if you don't want to use dynamic frameworks
   #
   pod 'lottie-ios', '2.1.8-stable.2+zhuanzhuan'
-#  pod 'AFNetworking', '4.0.1-fix+zhuanzhuan.4', :modular_headers => true
-  pod 'AFNetworking', :path => 'Binary/AFNetworking'
+  pod 'AFNetworking', '4.0.1-fix+zhuanzhuan.4', :modular_headers => true
+#  pod 'AFNetworking', :path => 'Binary/AFNetworking'
 
-  pod 'libwebp', '1.1.0'
+  pod 'libwebp', '1.1.0', :modular_headers => true, :source => $binary_source
 
-#  pod 'ZZKit-Swift', :git => 'http://gitlab.zhuanspirit.com/zz-ios-open/ios_module_zzkit_swift.git', :tag => '0.4.6'
-  pod 'ZZKit-Swift', :path => 'Binary/ZZKit-Swift'
+  pod 'ZZKit-Swift', :git => 'http://gitlab.zhuanspirit.com/zz-ios-open/ios_module_zzkit_swift.git', :tag => '0.4.6'
+#  pod 'ZZKit-Swift', :path => 'Binary/ZZKit-Swift'
 
   pod 'SwiftyJSON', :git => 'http://gitlab.zhuanspirit.com/zz-ios-open/ios_module_swifty_json.git', :tag => '5.0.1'
 #  pod 'SwiftyJSON', :path => 'Binary/SwiftyJSON'
@@ -49,7 +55,13 @@ post_install do |installer|
         target.build_configurations.each do |config|
           config.build_settings['CODE_SIGN_IDENTITY'] = ''
         end
+        next
       end
+      
+#      target.build_configurations.each do |config|
+#        puts "----From Podfile BUILD_LIBRARY_FOR_DISTRIBUTION = YES "
+#        config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
+#      end
     end
   end
 end

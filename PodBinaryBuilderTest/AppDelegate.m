@@ -7,6 +7,9 @@
 
 #import "AppDelegate.h"
 #import "PodBinaryBuilderTest-Swift.h"
+#import <libwebp/encode.h>
+
+@import libwebp;
 
 @import SwiftyJSON;
 @import AFNetworking;

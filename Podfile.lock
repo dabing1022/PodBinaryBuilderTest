@@ -1,5 +1,19 @@
 PODS:
-  - AFNetworking (0.3.9)
+  - "AFNetworking (4.0.1-fix+zhuanzhuan.4)":
+    - "AFNetworking/NSURLSession (= 4.0.1-fix+zhuanzhuan.4)"
+    - "AFNetworking/Reachability (= 4.0.1-fix+zhuanzhuan.4)"
+    - "AFNetworking/Security (= 4.0.1-fix+zhuanzhuan.4)"
+    - "AFNetworking/Serialization (= 4.0.1-fix+zhuanzhuan.4)"
+    - "AFNetworking/UIKit (= 4.0.1-fix+zhuanzhuan.4)"
+  - "AFNetworking/NSURLSession (4.0.1-fix+zhuanzhuan.4)":
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - "AFNetworking/Reachability (4.0.1-fix+zhuanzhuan.4)"
+  - "AFNetworking/Security (4.0.1-fix+zhuanzhuan.4)"
+  - "AFNetworking/Serialization (4.0.1-fix+zhuanzhuan.4)"
+  - "AFNetworking/UIKit (4.0.1-fix+zhuanzhuan.4)":
+    - AFNetworking/NSURLSession
   - libwebp (1.1.0):
     - libwebp/demux (= 1.1.0)
     - libwebp/mux (= 1.1.0)
@@ -12,45 +26,49 @@ PODS:
   - "lottie-ios (2.1.8-stable.2+zhuanzhuan)"
   - MixTest (0.1.0)
   - SwiftyJSON (5.0.1)
-  - ZZKit-Swift (0.3.9)
+  - ZZKit-Swift (0.4.6)
 
 DEPENDENCIES:
-  - AFNetworking (from `Binary/AFNetworking`)
+  - "AFNetworking (= 4.0.1-fix+zhuanzhuan.4)"
   - libwebp (= 1.1.0)
   - "lottie-ios (= 2.1.8-stable.2+zhuanzhuan)"
   - MixTest (from `./MixTest`)
   - SwiftyJSON (from `http://gitlab.zhuanspirit.com/zz-ios-open/ios_module_swifty_json.git`, tag `5.0.1`)
-  - ZZKit-Swift (from `Binary/ZZKit-Swift`)
+  - ZZKit-Swift (from `http://gitlab.zhuanspirit.com/zz-ios-open/ios_module_zzkit_swift.git`, tag `0.4.6`)
 
 SPEC REPOS:
-  http://gitlab.zhuanspirit.com/zz-ios-open/ZZOpenSpecs.git:
+  http://gitlab.zhuanspirit.com/zz-ios-open/ZZBinarySpecs.git:
     - libwebp
+  http://gitlab.zhuanspirit.com/zz-ios-open/ZZOpenSpecs.git:
+    - AFNetworking
     - lottie-ios
 
 EXTERNAL SOURCES:
-  AFNetworking:
-    :path: Binary/AFNetworking
   MixTest:
     :path: "./MixTest"
   SwiftyJSON:
     :git: http://gitlab.zhuanspirit.com/zz-ios-open/ios_module_swifty_json.git
     :tag: 5.0.1
   ZZKit-Swift:
-    :path: Binary/ZZKit-Swift
+    :git: http://gitlab.zhuanspirit.com/zz-ios-open/ios_module_zzkit_swift.git
+    :tag: 0.4.6
 
 CHECKOUT OPTIONS:
   SwiftyJSON:
     :git: http://gitlab.zhuanspirit.com/zz-ios-open/ios_module_swifty_json.git
     :tag: 5.0.1
+  ZZKit-Swift:
+    :git: http://gitlab.zhuanspirit.com/zz-ios-open/ios_module_zzkit_swift.git
+    :tag: 0.4.6
 
 SPEC CHECKSUMS:
-  AFNetworking: ca7c4a132c1a53e8042639f9148002dd6848853a
-  libwebp: bacdffcc031c698e83f501cf6689a827d32bb2e9
+  AFNetworking: 3190639ff5dfd212d659fdf92d85b3864d2860a5
+  libwebp: 03c5a9c2e80582676a72daa2c5f6cc896b11e225
   lottie-ios: 4023eb1dbcd0311af530bbeed097d59c7169747f
   MixTest: c417282a2eae02c2a90429c6c042be081e98ad49
   SwiftyJSON: f555982022bd81ad7330c871c6ec8205c439c5eb
-  ZZKit-Swift: e0db2cca22084e33c6fd1fadfa826a7b60cf9843
+  ZZKit-Swift: c322925b6ab08f9d5019175603c24124e31d039c
 
-PODFILE CHECKSUM: 8db955c748ec2e923c2ddc256d22ed3c61a4dcf1
+PODFILE CHECKSUM: bd66f2ff928a0a309f02032250905fe95a4ee1aa
 
 COCOAPODS: 1.16.2
